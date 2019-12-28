@@ -1,6 +1,6 @@
 Critical Lines Algorithm
 ---
-Port of the VBA code in the book "Mean-Variance Analysis in Portfolio Choice and Capital Markets" by Harry M. Markowitz.
+Port of the VBA code in the book "Mean-Variance Analysis in Portfolio Choice and Capital Markets" by Harry M. Markowitz to Java.
 
 The code is not very well tested, so use it for educational purposes only.
 
