@@ -1,4 +1,4 @@
-Critical Lines Algorithm
+Critical Line Algorithm
 ---
 Port of the VBA code in the book "Mean-Variance Analysis in Portfolio Choice and Capital Markets" by Harry M. Markowitz to Java.
 
