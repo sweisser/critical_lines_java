@@ -10,22 +10,18 @@ public class CriticalLines {
     private double[][] Mi;
 
     /**
-     * Static variables for {@link #iteration(States, InputVariables, OptimizerVariables, int)}.
-     *
-     * TODO Why static? Static, because you cannot declare these variables static inside the method.
-     *  They represent state that is only used from iteration to iteration.
-     *  We could wrap them in an object which holds the state...
+     * Variables for {@link #iteration(States, InputVariables, OptimizerVariables, int)}.
      */
-    private static int jMaxA;
-    private static Direction outDirection;
-    private static int jMaxB;
-    private static Direction inDirection;
-    private static double lambdaA, lambdaB;
+    private int jMaxA;
+    private Direction outDirection;
+    private int jMaxB;
+    private Direction inDirection;
+    private double lambdaA, lambdaB;
 
     /**
-     * Static variables for calcCornerPortfolios().
+     * Variables for calcCornerPortfolios().
      */
-    private static double oldLambdaE;
+    private double oldLambdaE;
 
     /**
      * Initialize the Critical Line Algorithm.
