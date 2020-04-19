@@ -13,8 +13,8 @@ public class CriticalLines {
      * Static variables for {@link #iteration(States, InputVariables, OptimizerVariables, int)}.
      *
      * TODO Why static? Static, because you cannot declare these variables static inside the method.
-     *  Anyway, they resemble some kind of state that is only used from iteration to iteration.
-     *  We could wrap them in an object which holds the state.
+     *  They represent state that is only used from iteration to iteration.
+     *  We could wrap them in an object which holds the state...
      */
     private static int jMaxA;
     private static Direction outDirection;

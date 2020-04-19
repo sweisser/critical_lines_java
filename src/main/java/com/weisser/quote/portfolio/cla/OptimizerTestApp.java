@@ -27,11 +27,7 @@ public class OptimizerTestApp {
         //
         Inputs inputs = new Inputs();
         InputVariables inputVars = new InputVariables();
-        int rc = inputs.read(inputVars);
-        if (rc != 0) {
-            System.err.println("Optimizer Error: Error Reading Inputs\n");
-            return;
-        }
+        inputs.read(inputVars);
 
         //
         // Init the optimizer and run optimize.

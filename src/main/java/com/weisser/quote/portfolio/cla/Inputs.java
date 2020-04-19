@@ -3,7 +3,7 @@ package com.weisser.quote.portfolio.cla;
 /**
  * Module Inputs.
  *
- * In the original code, this class is responsible for reading the input data of the optimization problem
+ * In the original code, this class was responsible for reading the input data of the optimization problem
  * from the excel sheet.
  *
  * Here we have hardwired the test case from the book.
@@ -23,7 +23,7 @@ public class Inputs {
      * @param inputVars The variables object to read into.
      * @return 0 if okay, -1 when an error occured during setup.
      */
-    public int read(InputVariables inputVars) {
+    public void read(InputVariables inputVars) {
         inputVars.setEndLambdaE(0.00001);
 
         char[] conTypes = {'=', '>', '<'};
@@ -64,7 +64,5 @@ public class Inputs {
             0.0343476, 0.0287487, 0.0427563, 0.0291418, 0.0254266, 0.0172374, 0.0462703, 0.0106553, 0.3168158,
             0.0224990, 0.0133687, 0.0205730, 0.0164038, 0.0128408, 0.0072378, 0.0192609, 0.0076096, 0.0185432, 0.1107929};
         inputVars.setCovariance(tmpCov);
-
-        return 0;
     }
 }

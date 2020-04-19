@@ -27,7 +27,7 @@ public class InputVariables {
     private int numSlackVars;
 
     /**
-     * Number of variables n = numSecurities+numSlackVars.
+     * Number of variables n = numSecurities + numSlackVars.
      */
     private int numVariables;
 
@@ -153,15 +153,6 @@ public class InputVariables {
     }
 
     /**
-     * Sets the number of constraints for optimization.
-     *
-     * @param numConstraints The number of constraints.
-     */
-    public void setNumConstraints(int numConstraints) {
-        this.numConstraints = numConstraints;
-    }
-
-    /**
      * Returns the number of constraints.
      *
      * @return The number of constraints.
@@ -198,9 +189,10 @@ public class InputVariables {
      * constraint type.
      */
     private int setConTypes(char[] conTypes) {
-        numSlackVars = 0;
+        this.numSlackVars = 0;
+        this.numConstraints = conTypes.length;
 
-        conType = new ConstraintType[numConstraints];
+        this.conType = new ConstraintType[numConstraints];
 
         for (int i = 0; i < numConstraints; i++) {
             switch (conTypes[i]) {
@@ -379,7 +371,6 @@ public class InputVariables {
     public void init(int numSecurities, char[] conTypes) {
         setNumSecurities(numSecurities);
 
-        setNumConstraints(conTypes.length);
         System.out.println("Constraints: " + conTypes.length);
 
         // TODO Refactoring: Better error handling. Define an Exception for this case.

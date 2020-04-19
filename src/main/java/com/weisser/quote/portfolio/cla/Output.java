@@ -11,9 +11,9 @@ public interface Output {
     FileOutputStream claDebugFileOutputStream();
 
     void openSimplexDebugFile();
-    void openCLADebugFile();
-
     void closeSimplexDebugFile();
+
+    void openCLADebugFile();
     void closeCLADebugFile();
 
     void dump(String name, int value);
