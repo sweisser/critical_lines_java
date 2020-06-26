@@ -27,7 +27,7 @@ public class OptimizerTestApp {
         //
         Inputs inputs = new Inputs();
         InputVariables inputVars = new InputVariables();
-        inputs.read(inputVars);
+        inputs.read1(inputVars);
 
         //
         // Init the optimizer and run optimize.

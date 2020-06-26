@@ -169,8 +169,8 @@ public class CriticalLines {
             alphav[j] = alpha;
             betav[j] = beta;
 
-            if (j < inputVars.getNumVariables() - 1) {
-                output.println_cla("<C11>" + clacount + "; j < n; " + j + " <= " + (inputVars.getNumVariables() - 1));
+            if (j < inputVars.getNumVariables()) {
+                output.println_cla("<C11>" + clacount + "; j < n; " + j + " <= " + (inputVars.getNumVariables()));
 
                 // For non-lambda variable check for going OUT.
                 if (beta > Optimizer.EPSILON) {
